@@ -1,16 +1,110 @@
-# React + Vite
+# 🦷 City Dental Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern dental clinic website built using **React + Vite**.
+This project includes a responsive UI, service pages, appointment booking, and more.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Tech Stack
 
-## React Compiler
+* React (Frontend Library)
+* Vite (Build Tool)
+* Tailwind CSS (Styling)
+* Node.js & Express (Backend)
+* MongoDB (Database)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+city-dental/
+│
+├── client/        # React frontend
+├── server/        # Backend (API)
+├── README.md
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+
+```
+git clone https://github.com/your-username/city-dental.git
+cd city-dental
+```
+
+---
+
+### 2. Install dependencies
+
+#### Frontend
+
+```
+cd client
+npm install
+```
+
+#### Backend
+
+```
+cd ../server
+npm install
+```
+
+---
+
+### 3. Run the project
+
+#### Start backend
+
+```
+cd server
+npm run dev
+```
+
+#### Start frontend
+
+```
+cd client
+npm run dev
+```
+
+---
+
+## 🌐 Features
+
+* 🦷 Dental services listing
+* 📅 Appointment booking system
+* 👨‍⚕️ Team & About pages
+* 📞 Contact section
+* 🔐 Authentication (Login/Register)
+
+---
+
+## 📌 Notes
+
+* Make sure MongoDB is running locally or use a cloud database
+* Update environment variables in `.env` file
+
+---
+
+## 📷 Future Improvements
+
+* Payment integration
+* Admin dashboard
+* Online consultation feature
+
+---
+
+## 👨‍💻 Author
+
+Developed by **Sarkhedi**
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!

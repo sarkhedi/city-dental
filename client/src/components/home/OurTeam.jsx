@@ -6,18 +6,15 @@ import { FaFacebookF, FaYoutube, FaInstagram, FaTwitter } from 'react-icons/fa';
 const teamMembers = [
   {
     name: "Dr. Deep Sarkhedi",
-    role: "B.D.S.",
-    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80"
+    role: "B. D. S."
   },
   {
     name: "Dr. Khyati Sarkhedi",
-    role: "B.D.S.",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80"
+    role: "B. D. S."
   },
   {
     name: "Dr. Khushbhu Sarkhedi",
-    role: "B.D.S.",
-    image: "https://images.unsplash.com/photo-1594824436998-dd40e4f35e08?auto=format&fit=crop&w=600&q=80"
+    role: "B. D. S."
   }
 ];
 
@@ -60,8 +57,8 @@ const OurTeam = () => {
 
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          {teamMembers.map((member, index) => (
-            <motion.div 
+{teamMembers.map((member, index) => (
+            <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -69,30 +66,8 @@ const OurTeam = () => {
               transition={{ delay: index * 0.1, duration: 0.5 }}
               className="group"
             >
-              <div className="relative rounded-[32px] overflow-hidden mb-6 aspect-[4/5] shadow-md border-4 border-transparent group-hover:border-[#F2F8FB] transition-all duration-300">
-                <img 
-                  src={member.image} 
-                  alt={member.name} 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                
-                {/* Social Overlay */}
-                <div className="absolute inset-0 bg-[#0A2B42]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="flex gap-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                    <a href="#" className="w-10 h-10 rounded-full bg-[#1784B4] text-white flex items-center justify-center hover:bg-white hover:text-[#1784B4] transition-colors shadow-lg">
-                      <FaFacebookF className="text-sm" />
-                    </a>
-                    <a href="#" className="w-10 h-10 rounded-full bg-[#1784B4] text-white flex items-center justify-center hover:bg-white hover:text-[#1784B4] transition-colors shadow-lg">
-                      <FaYoutube className="text-sm" />
-                    </a>
-                    <a href="#" className="w-10 h-10 rounded-full bg-[#1784B4] text-white flex items-center justify-center hover:bg-white hover:text-[#1784B4] transition-colors shadow-lg">
-                      <FaInstagram className="text-sm" />
-                    </a>
-                    <a href="#" className="w-10 h-10 rounded-full bg-[#1784B4] text-white flex items-center justify-center hover:bg-white hover:text-[#1784B4] transition-colors shadow-lg">
-                      <FaTwitter className="text-sm" />
-                    </a>
-                  </div>
-                </div>
+              <div className="relative rounded-[32px] overflow-hidden mb-6 aspect-[4/5] shadow-md border-4 border-transparent group-hover:border-[#F2F8FB] transition-all duration-300 bg-[#cae8f5] flex items-center justify-center">
+                <span className="text-[#1784B4] text-6xl font-extrabold">{member.name.charAt(0)}</span>
               </div>
               <div className="text-center">
                 <h3 className="text-[20px] font-bold text-[#0A2B42] capitalize mb-1">{member.name}</h3>
