@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Apna Dentist
 
 Apna Dentist is a full-stack MERN web application built for a modern dental clinic. It provides an intuitive interface for patients to book appointments, view services, and learn about the clinic. It also includes an admin dashboard for managing appointments and patients efficiently.
@@ -140,3 +141,6 @@ apna-dentist/
 
 ### Contact (`/api/contact`)
 - `POST /` - Submit a contact us message
+=======
+# city-dental
+>>>>>>> 30e306546106de2918ac19385770d945fb133c43
