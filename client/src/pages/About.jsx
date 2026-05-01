@@ -4,22 +4,19 @@ import { FiPlus, FiCheckCircle } from 'react-icons/fi';
 import { FaQuoteLeft } from 'react-icons/fa';
 
 const About = () => {
-  const team = [
+const team = [
     {
       name: "Dr. Deep Sarkhedi",
-      role: "B.D.S.",
-      img: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&q=80"
+      role: "B. D. S."
     },
     {
       name: "Dr. Khyati Sarkhedi",
-      role: "B.D.S.",
-      img: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&q=80"
+      role: "B. D. S."
     },
     {
       name: "Dr. Khushbhu Sarkhedi",
-      role: "B.D.S.",
-      img: "https://images.unsplash.com/photo-1594824436998-dd40e4f35e08?auto=format&fit=crop&w=400&q=80"
-    },
+      role: "B. D. S."
+    }
   ];
 
   return (
@@ -140,7 +137,7 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {team.map((member, idx) => (
-              <motion.div
+<motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -148,15 +145,8 @@ const About = () => {
                 transition={{ delay: idx * 0.1 }}
                 className="bg-white rounded-[30px] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group"
               >
-                <div className="relative h-80 overflow-hidden">
-                  <img 
-                    src={member.img} 
-                    alt={member.name} 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A2B42]/90 via-[#0A2B42]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-8">
-                    <FaQuoteLeft className="text-[#1784B4] text-4xl" />
-                  </div>
+                <div className="relative h-80 overflow-hidden bg-[#cae8f5] flex items-center justify-center">
+                  <span className="text-[#1784B4] text-7xl font-extrabold">{member.name.charAt(0)}</span>
                 </div>
                 <div className="p-6 text-center">
                   <h3 className="text-[#0A2B42] text-xl font-bold mb-1">{member.name}</h3>
